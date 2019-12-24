@@ -1,0 +1,18 @@
+<div ng-app="phoneList" ng-controller="myCtrl">
+  <p>Write something in the input field:</p>
+  <input type="text" ng-change="myFunc()" ng-model="firstname" />
+  <input type="text" ng-change="myFunc()" ng-model="lastname" />
+  <button ng-click="Addname()">Add</button>
+
+  <p ng-show="true">Fullname : {{fullname}} </p> 
+  <p ng-hide="true">Fullname : {{fullname}} </p> 
+
+  <p>History Name</p>
+  <p ng-repeat = "data in ListName">
+    {{data}}
+  </p>
+
+
+  <h1 ng-if="firstname == 'dan' "> Hello DAN </h1>
+  <h1 ng-if="firstname == 'aun' "> Hello Aun </h1>
+</div>
